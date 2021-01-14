@@ -56,7 +56,7 @@ inference time: 343 ms
 2. Install the environment:
     ```console
     $ cd optw_rl/
-    $ conda env create --file environment_optw.yml
+    $ conda env create --file environment.yml
     ```
 
 3. Activate the environment:
