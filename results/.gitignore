@@ -1,0 +1,23 @@
+# Ignore everything in this directory
+*
+!.gitignore
+
+# Except the default trained models for instance t101 in uni and corr sample
+!t101
+
+t101/*
+!t101/model_w
+t101/model_w/*
+!t101/model_w/model_article_corr_samp
+t101/model_w/model_article_corr_samp/*
+!t101/model_w/model_article_corr_samp/model_article_training_args.txt
+!t101/model_w/model_article_corr_samp/model_500000.pkl
+
+!pr01
+pr01/*
+!pr01/model_w
+pr01/model_w/*
+!pr01/model_w/model_article_uni_samp
+pr01/model_w/model_article_uni_samp/*
+!pr01/model_w/model_article_uni_samp/model_article_training_args.txt
+!pr01/model_w/model_article_uni_samp/model_500000.pkl

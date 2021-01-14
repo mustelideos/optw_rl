@@ -1,0 +1,52 @@
+***************************
+* TTDP test instances *
+***************************
+
+The first line contains the following data:
+
+	k M SD N C B E1 E2 E3 E4 E5 E6 E7 E8 E9 E10
+
+Where
+	k=20 
+	M = number of tours
+	SD = start day (from 0 to 6)
+	N = number of vertices
+	C = not relevant
+	B = not relevant
+	Ez = not relevant
+
+The second line associates with start/end point (typically hotel):
+
+	i x y d S 0 C
+
+Where
+	i = vertex number = 0
+	x = x coordinate
+	y = y coordinate
+	d = visiting duration = 0	
+	S = score of the location = 0
+	O = opening of time window (start of the tour)
+	C = closing of time window (end of the tour)
+	
+
+The remaining lines contain the data of each point. 
+For each point, the line contains the following data:
+
+	i x y d S t open[0] close[0] open[1] close[1] open[2] close[2] open[3] close[3] open[4] close[4] open[5] close[5] open[6] close[6] b
+
+Where
+	i = vertex number
+	x = x coordinate
+	y = y coordinate
+	d = visiting duration	
+	S = score of the location
+	t = not relevant
+	open[i] = the opening hour of the day i , i=0,1,2,3,4,5,6
+	close[i] = the closing hour of the day i , i=0,1,2,3,4,5,6
+	b = not relevant
+
+* REMARKS *
+	- The first point (vertex number 0) is the starting AND ending point.
+	- The first regular point has vertex number 1. 
+	- The time budget per path (Tmax) equals the closing time minus the starting time of the starting point.
+	- The Euclidean distance is used and rounded down to the second decimal.

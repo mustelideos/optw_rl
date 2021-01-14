@@ -1,0 +1,16 @@
+name: optw_env
+channels:
+  - defaults
+  - conda-forge
+  #- anaconda
+dependencies:
+  - python=3.7
+  - pyyaml
+  - pip
+  - pandas
+  - tqdm
+  - matplotlib
+  - pip:
+    - scikits.bootstrap
+    - torch
+    - torchvision
