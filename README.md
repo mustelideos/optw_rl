@@ -80,7 +80,7 @@ inference time: 343 ms
     total score: 400
     ```
   #### On the Generated Instances
-0. Make sure to generate the validation set of generated tourist-region-instances first
+0. Make sure to generate the validation set of tourist-region-instances first
     ```console
     $ python generate_instances.py --instance t101 --sample_type corr_samp
     ```
@@ -97,16 +97,21 @@ inference time: 343 ms
 
 ## Train a new Model and Infer
 
-0. Choose a name, how many epochs and how often it is saved
-```console
-$ python train_optw_rl.py --instance t101 --sample_type corr_samp --nepocs 1000 --nsave 1000 --model_name testing_1
-```
+0. Make sure to generate the validation set of tourist-region-instances first. These are used to report performance during training.
+      ```console
+      $ python generate_instances.py --instance t101 --sample_type corr_samp
+      ```
+    
+1. Choose a name, how many epochs and how often it is saved
+      ```console
+      $ python train_optw_rl.py --instance t101 --sample_type corr_samp --nepocs 1000 --nsave 1000 --model_name testing_1
+      ```
 
-1. Infer (using Beam Search, for instance) specifying the model name and the (saved) number of epochs
-```console
-$  python inference_optw_rl.py --instance t101  --sample_type corr_samp --model_name testing_1 --saved_model_epoch 1000
-total score: 376
-```
+2. Infer (using Beam Search, for instance) specifying the model name and the (saved) number of epochs
+      ```console
+      $  python inference_optw_rl.py --instance t101  --sample_type corr_samp --model_name testing_1 --saved_model_epoch 1000
+      total score: 376
+      ```
 
 For optional arguments and default values:
 ```console
