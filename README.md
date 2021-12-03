@@ -2,7 +2,10 @@
 
 A PyTorch implementation of the Pointer Network model in:
 
-[A Reinforcement Learning Approach to the Orienteering Problem with Time Windows.](https://arxiv.org/abs/2011.03647) Gama R, Fernandes HL
+*[A reinforcement learning approach to the orienteering problem with time windows](https://www.sciencedirect.com/science/article/pii/S0305054821001349) <br/>
+[Gama R](https://scholar.google.com/citations?hl=en&user=uHKwsF0AAAAJ&view_op=list_works&sortby=pubdate), 
+[Fernandes HL](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=JG7xb2AAAAAJ&sortby=pubdate) - Computers & Operations Research, 2021* 
+  ([arXiv](https://arxiv.org/abs/2011.03647), [github](https://github.com/mustelideos/optw_rl))
 
 ```
 @misc{gama&fernandes2020,
